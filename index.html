@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <body>
+    <div id=" topnavigator">
+      <a class="page-logo" href="./index.html"
+        >Welcome to<span class="dotcom"> Food.com</span></a
+      >
+      <a class="login" href="./login.html">Login</a>
+    </div>
+
+    <div id="navi">
+      <ul class="horizontal">
+        <li><a class="active" href="./index.html">Home</a></li>
+        <li><a href="./second.html">Second</a></li>
+        <li><a href="https://www.foodnetwork.com/">Third</a></li>
+      </ul>
+    </div>
+
+    <h1 id="h1">Different 5 Cuisines: We must try</h1>
+    <div class="top">
+      <!-- for image-->
+    </div>
+    <div id="container">
+      <p id="p1">
+        Whether you love to cook or you just love to eat, many of us think we
+        know our favorite types of cuisine. Maybe we’d pick Italian, Mexican,
+        Chinese, or even classic American food. If those are the only types of
+        cuisine you’ve tried, however, it’s time to start exploring a few new
+        cuisines, cooking styles, and restaurants.
+      </p>
+      <ul class="vertical">
+        <li><a class="fd1" onclick="showIndian()">Indian</a></li>
+        <img  id ="img1" src="" style="width:100%">
+        <p id="indian" style="display: none"></p>
+        
+
+        <li><a onclick="showViet()"> Vietnamese</a></li>
+        <img id="img2" src="" style="width:100%">
+        <p id="viet" style="display: none"></p>
+
+        <li><a onclick="showCari()"> Caribbean</a></li>
+        <img id="img3" src ="" style="width: 100%;">
+        <p id="cari" style="display: none"></p>
+
+        <li><a onclick="showkori()"> Korean</a></li>
+        <img id="img4" src ="" style="width: 100%;">
+        <p id="kori" style="display: none"></p>
+
+        <li><a onclick="showjap()"> Japanese</a></li>
+        <img id="img5" src ="" style="width: 100%;">
+        <p id="jap" style="display: none"></p>
+      </ul>
+    </div>
+
+    <div ud="bottom"></div>
+
+    <script>
+      function showjap() {
+      
+      document.getElementById("img5").src= "jap.jpg" ;
+      document.getElementById("jap").style.display = "block";
+      document.getElementById("jap").innerHTML ="The traditional cuisine of Japan, washoku (和食), lit. Japanese eating (or kappō (ja:割烹)), is based on rice with miso soup and other dishes; there is an emphasis on seasonal ingredients. Side dishes often consist of fish, pickled vegetables, and vegetables cooked in broth.Japanese cuisine includes a wide variety of products, some 1,500 different items, with rice at its center. It also emphasizes seasonal produce, and uses many fermented foods such as miso, natto and soy sauce.";
+  }
+      function showkori() {
+      
+      document.getElementById("img4").src= "kori.jpg" ;
+      document.getElementById("kori").style.display = "block";
+      document.getElementById("kori").innerHTML =
+        "Korean meals are built around rice, vegetables, and meat that may be grilled, steamed, or raw in the case of fish. Expect an abundance of flavorful side dishes, including Kimchi—spicy fermented vegetables containing cabbage and radish—at nearly every meal. Prevalent seasonings include sesame oil, fermented bean and chili pastes, soy sauce, garlic, ginger, and pepper flakes. Mung beans and bean sprouts are also popular, and may be sautéed or made into porridges, noodles, and pancakes.";
+    }
+      function showCari() {
+      
+        document.getElementById("img3").src= "cari.jpg" ;
+        document.getElementById("cari").style.display = "block";
+        document.getElementById("cari").innerHTML =
+          "Incorporating various traditions blended together over time, Caribbean cuisine is a delightful fusion of other types of food, including African, Creole, and Latin American. Fish, chicken, and pork are commonly made into delectable stews and curries as well as roasted or grilled. Beans and rice are staples, along with coconut, bell peppers, limes, tomatoes, yams, plantains, and yucca (a starchy root vegetable). Caribbean spices, marinades, and seasonings often make the dish and may include tropical fruits as well as garlic, hot peppers, onion, cilantro, rosemary, tarragon, tamarind, and marjoram.";
+      }
+      function showViet() {
+        document.getElementById("img2").src ="viet.jpg";
+        document.getElementById("viet").style.display = "block";
+        document.getElementById("viet").innerHTML =
+          "Vietnamese food reflects the culture’s desire for balance and the yin and yang, with a focus on finding the perfect mix of spicy, sour, bitter, salty, and sweet. Likewise, they strive to incorporate five colors, appeal to the five senses with meals, and combine cooling elements with warming elements. Soy sauce, shrimp paste, a fermented sauce called nuoc mam, rice, fruit, vegetables, and meat are prevalent, while dairy and oil are rare. Known for their use of fresh herbs, Vietnamese cooks commonly add ginger, mint, lemongrass, coriander, cinnamon, chili, lime, and basil to dishes.";
+      }
+      function showIndian() {
+       
+        document.getElementById("img1").src = "indian2.jpg";
+        document.getElementById("indian").style.display = "block";
+
+        document.getElementById("indian").innerHTML =
+          "Though Indian cuisine varies greatly by region some commonalities exist across the country. Many dishes are vegetarian, and beef in particular is very rare. An impressive diversity and complexity of ingredients, spices, and flavors is characteristic of Indian cuisine, with the average dish containing at least 7 ingredients. Spices are essential in cooking including cumin, coriander, ginger, turmeric, cinnamon, cloves, chili pepper, cardamom, and cayenne. Meat or vegetables with curry sauce is a staple, along with rice, dal (cooked lentils), and a bread called naan. Dairy is also used frequently, including a delicious homemade white cheese called paneer.";
+          
+      }
+    </script>
+  </body>
+</html>

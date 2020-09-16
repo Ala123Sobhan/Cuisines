@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>FORM VALIDATION</title>
+    <link rel="stylesheet" href="style.css" />
+    <script>
+      function validate() {
+        var uname = document.getElementById("uname");
+        var pass = document.getElementById("pass");
+        var pass2 = document.getElementById("pass2");
+        var em = document.getElementById("email1");
+
+        const username = uname.value.trim();
+        const password = pass.value.trim();
+        const password2 = pass2.value.trim();
+        const email11 = email1.value.trim();
+
+        var flag = true;
+        if (username === "") {
+          // alert("blank username");
+          uname.style.border = "solid 3px red";
+          document.getElementById("label1").style.display = "inline";
+          flag = false;
+        }
+        if (password === "") {
+          // alert("blank password");
+          pass.style.border = "solid 3px red";
+          document.getElementById("label2").style.display = "inline";
+          flag = false;
+        } else if (password.length < 5) {
+          pass.style.border = "solid 3px red";
+          document.getElementById("label3").style.display = "inline";
+          flag = false;
+        }
+        if (password !== password2) {
+          pass2.style.border = "solid 3px red";
+          document.getElementById("label4").style.display = "inline";
+          flag = false;
+        }
+        if (email11 === "") {
+          em.style.border = "solid 3px red";
+          document.getElementById("label5").style.display = "inline";
+          flag = false;
+        }
+
+        //alert("Going to a new page!");
+        document.getElementById("f1").action = "message.html";
+
+        return flag;
+      }
+    </script>
+  </head>
+  <body>
+    <div id = " topnavigator">
+      <a class="page-logo" href ="./index.html">Welcome to<span class ="dotcom"> Food.com</span></a>
+      <a class="login" href = "./login.html">Login</a>
+    </div>
+
+
+
+    <div id ="navi">
+    <ul class="horizontal">
+      <li><a class ="active" href="./index.html">Home</a></li>
+      <li><a href  = "./second.html">Second</a></li>
+      <li><a href = "https://www.foodnetwork.com/">Third</a></li>
+    </ul>
+    </div>
+    
+
+    <div id = "top">
+              <h1 id = "Different Cuisines to try"></h1>
+    </div>
+    <div id="container">
+
+    </div>
+
+    <div id =form>
+    <form id="f1" onsubmit="return validate();">
+      <div id="header">
+        <h2>Create an account</h2>
+      </div>
+      <div id="form-control">
+        <label>Username: </label>
+        <input id="uname" placeholder="username" type="text" />
+
+        <label id="label1" style="color: red; display: none">INVALID</label>
+
+        <br /><br />
+        <label>PassWord: </label>
+        <input id="pass" placeholder="password" type="password" />
+
+        <label id="label2" style="color: red; display: none">INVALID</label>
+        <label id="label3" style="color: red; display: none"
+          >Too short password</label
+        >
+        <br /><br />
+
+        <label>Confirm Password: </label>
+        <input id="pass2" placeholder="password" type="password" />
+
+        <label id="label4" style="color: red; display: none"
+          >Password does not match</label
+        >
+
+        <br /><br />
+        <label>Email: </label>
+        <input id="email1" placeholder="abs@gmail.com" type="email" />
+
+        <label id="label5" style="color: red; display: none"
+          >Enter email id</label
+        >
+
+        <br /><br />
+
+        <button type="submit">SUBMIT</button>
+      </div>
+    </form>
+    </div>
+  </body>
+</html>

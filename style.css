@@ -1,0 +1,117 @@
+body {
+  font: 100% Luicinda Sans, Verdana;
+  margin: 20 px;
+  background-color: white;
+}
+h1 {
+  color: #555555;
+}
+
+div {
+  display: block;
+}
+.active {
+  background-color: #84c754;
+}
+
+.page-logo {
+  font-family: fontawesome;
+  text-decoration: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  font-size: 37px;
+  letter-spacing: 3px;
+  color: #555555;
+  display: block;
+  position: absolute;
+  top: 17px;
+  margin-top: 2px;
+  margin-bottom: 25px;
+}
+
+.login {
+  float: right;
+  line-height: 1.5;
+  padding: 6px 14px;
+  color: #fff;
+  background-color: #4caf50;
+  text-decoration: none;
+  border-radius: 5px;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
+#navi {
+  margin-top: 20px;
+  margin-bottom: 5px;
+}
+li a:hover {
+  background-color: #111;
+}
+ul.horizontal {
+  display: block;
+  width: 100%;
+  list-style-type: none;
+  margin: 2;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+  z-index: 10;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+#topnavigator {
+  margin-bottom: 20px;
+}
+ul.horizontal li {
+  float: left;
+}
+ul.horizontal li a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+ul.vertical {
+  display: inline-block;
+  color: #84c754;
+  padding: 14px 16px;
+  font-family:  "Segoe UI", Arial, sans-serif;
+  font-size: 20px;
+  letter-spacing: 3px;
+}
+#indian, #viet, #cari, #kori, #jap{
+    display: block;
+    text-align: justify;
+    color: #555555;
+    font-family:  "Segoe UI", Arial, sans-serif;
+    font-size: 20px;
+    letter-spacing: 3px;
+}
+.top {
+  color: #84c754;
+  width: auto;
+  padding: 20px;
+  text-align: left;
+  background-size: 100% 100%;
+  width: 100%;
+  height: 400px;
+  background-image: url("Sushi.jpg");
+}
+#img {
+  max-width: 100%;
+  height: auto;
+}
+.container {
+  position: relative;
+}
+.dotcom {
+  color: #84c754;
+}
+#p1 {
+  font-size: 20px;
+  letter-spacing: 3px;
+  color: #555555;
+  display: block;
+  text-align: justify;
+  font-family: "Segoe UI", Arial, sans-serif;
+}
